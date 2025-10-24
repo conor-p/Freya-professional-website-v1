@@ -1,4 +1,5 @@
 .DS_Store
+.vscode
 node_modules
 .sass-cache
 bower_components

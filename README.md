@@ -1,7 +1,5 @@
-# Week 3 Lab
+# Freya's professional website
 
-This repository contains the code for in-class exercises for Week 3 of Intro
-to Coding for Journalists. You will be creating a simple Bootstrap-based
-site according to the Week 3 Lab directions. 
+Using the Week 3 Lab from [Intro to Coding for Journalists](https://github.com/fullstackjournalists/intro-to-coding-for-journalists/blob/master/week3.md), reworked the website to begin to be useful for Freya for potential freelancing.
 
-[Grayscale](http://startbootstrap.com/template-overviews/grayscale/) is a multipurpose, one page HTML theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+Initial work completed Fri 24 Oct 2025.
