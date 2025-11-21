@@ -5,7 +5,7 @@ import { resolve } from 'path'
 export default defineConfig({
   // FIX 1: Set the base path for GitHub Pages
   // You MUST replace 'your-repo-name' with the EXACT name of your GitHub repository.
-  base: 'https://conor-p.github.io/Freya-professional-website-v1/dist/article1/article1.html', 
+  base: '/Freya-professional-website-v1/', 
   
   build: {
     rollupOptions: {
