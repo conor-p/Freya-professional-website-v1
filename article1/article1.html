@@ -10,15 +10,15 @@
     <title>Article 1 - Test Website</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+   <!--<link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles -->
-    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="../css/grayscale.css" rel="stylesheet">
     
     <style>
         /* Article-specific styles */
@@ -26,7 +26,7 @@
             padding-top: 180px;
             padding-bottom: 100px;
             text-align: center;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url("img/background-speckle.jpg");
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url("../img/background-speckle.jpg");
             background-repeat: repeat;
             background-size: auto;
             min-height: 50vh;
@@ -80,7 +80,7 @@
         
         .article-back {
             padding: 80px 0;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url("img/background-speckle.jpg");
+            background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url("../img/background-speckle.jpg");
             background-repeat: repeat;
             background-size: auto;
         }
@@ -139,7 +139,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="index.html">Test Website</a>
+            <a class="navbar-brand js-scroll-trigger" href="../index.html">Test Website</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fa fa-bars"></i>
@@ -147,10 +147,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#about">About</a>
+                        <a class="nav-link js-scroll-trigger" href="../index.html#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#example-work">Example Work</a>
+                        <a class="nav-link js-scroll-trigger" href="../index.html#example-work">Example Work</a>
                     </li>
                 </ul>
             </div>
@@ -162,8 +162,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="article-title">ARTICLE 1</h1>
-                    <p class="article-meta">Published on [Date]</p>
+                    <h1 class="article-title">plotting d3 charts</h1>
+                    <p class="article-meta">Published on 21 Nov 2025</p>
                 </div>
             </div>
         </div>
@@ -176,9 +176,15 @@
                 <div class="col-12">
                     <div class="article-body">
                         <!-- Article content goes here -->
-                        <p>Introduction paragraph goes here. This is where you'll write the opening of your article, setting the context and drawing the reader in with compelling insights about your research or topic.</p>
+                        <p>This is a chart that shows monthly inflation in the UK since 1989.</p>
                         
-                        <h3>SECTION HEADING</h3>
+                        <h3>Trended inflation in the UK</h3>
+
+                            <div id="article1-chart1">
+                                <svg id="article1-chart1-svg" width="750" height="750"></svg>
+                                
+                            </div>
+                        
                         <p>Article content goes here. This section can explore the first major point or theme of your article. Use clear, engaging language to communicate your insights and findings.</p>
                         
                         <p>Continue with additional paragraphs as needed. Each paragraph should flow naturally into the next, building your argument or narrative.</p>
@@ -200,7 +206,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <a href="index.html" class="btn btn-default btn-lg">
+                    <a href="../index.html" class="btn btn-default btn-lg">
                         <i class="fa fa-arrow-left"></i> Back to Main Page
                     </a>
                 </div>
@@ -216,14 +222,16 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts -->
-    <script src="js/grayscale.min.js"></script>
+    <!-- Custom scripts - load at the end of the file -->
+    <script src="../js/grayscale.min.js"></script>
+
+    <script type="module" src="./article1_chart1.js"></script>
 
 </body>
 
