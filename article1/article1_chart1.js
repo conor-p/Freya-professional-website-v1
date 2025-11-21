@@ -1,4 +1,4 @@
-import * as d3 from 'd3'; // this works
+import * as d3 from 'd3';
 
 // Define data parser
 const parseDate = d3.timeParse("%Y %b");
@@ -6,7 +6,7 @@ const parseDate = d3.timeParse("%Y %b");
 // Select the first SVG by its unique ID
 const svg = d3.select("#article1-chart1-svg");
 
-d3.csv("./series-211125.csv") 
+d3.csv("/Freya-professional-website-v1/article1/series-211125.csv") 
     .then(d => {
 
         console.log("1. Raw Data Loaded:", d);
