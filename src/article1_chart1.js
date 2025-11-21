@@ -53,12 +53,13 @@ d3.csv('/Freya-professional-website-v1/series-211125.csv')
             .attr("class", "time-path")
             .attr("fill", "none") // Ensure it doesn't fill
             .attr("stroke", "teal") // Set the line color
-            .attr("stroke-width", 2)
+            .attr("stroke-width", 3)
             // Use the generator function to convert the data into the SVG 'd' path attribute
             .attr("d", lineGenerator);
 
         // 5. Define and position X Axis
-        const xAxis = d3.axisBottom(xScale);
+        const xAxis = d3.axisBottom(xScale)
+            .tickPadding(8);
 
         svg.append("g")
             .attr("class", "x axis")
@@ -66,7 +67,8 @@ d3.csv('/Freya-professional-website-v1/series-211125.csv')
             .call(xAxis);
 
         // 6. Define and position Y Axis
-        const yAxis = d3.axisLeft(yScale);
+        const yAxis = d3.axisLeft(yScale)
+            .tickPadding(8);
 
         svg.append("g")
             .attr("class", "y axis")

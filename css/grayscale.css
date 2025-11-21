@@ -343,3 +343,21 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }/*# sourceMappingURL=grayscale.css.map */
+
+
+.axis text {
+    font-size: 16px; /* Use px for exact size control */
+    fill: #ffffff;
+}
+
+/* Styles the main axis line (the domain) */
+.axis .domain {
+    stroke: #ffffff; /* Set the line color */
+    stroke-width: 2px; /* Increase the line thickness */
+}
+
+/* Styles the tick marks */
+.axis .tick line {
+    stroke: #ffffff; /* Set the tick color */
+    stroke-width: 4px; /* Adjust the tick thickness */
+}
